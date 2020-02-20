@@ -63,7 +63,7 @@ public class BackgroundPage {
 	@FindBy(how = How.XPATH, using = "//*[contains(@class,'btnDefault')]")
 	WebElement NextButton;
 
-	@FindBy(how = How.XPATH, using = "//*[contains(@class,'btnDefault')]")
+	@FindBy(how = How.XPATH, using = "/html/body/app-root/div/app-applicant-details/div/div/div/app-disclosure-agreement/div[1]/div[2]/div[2]/div/div/div/button")
 	WebElement SecondNextButton;
 	@FindBy(how = How.XPATH, using ="//*[@class='boldClassMobile']")
 	WebElement Scrollitem;
