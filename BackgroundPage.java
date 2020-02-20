@@ -94,7 +94,6 @@ public class BackgroundPage {
 	}
 
 	public void clickCalenderICon() throws InterruptedException {
-		EnterDate.clear();
 		CalenderICon.click();
 	}
 
