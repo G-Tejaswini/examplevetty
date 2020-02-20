@@ -24,7 +24,7 @@ public class BackgroundPage {
 	WebElement LastName;
 	@FindBy(how = How.XPATH, using = "//*[@id=\"ssn\"]")
 	WebElement SocialSecurityNumber;
-    @FindBy(how = How.XPATH, using = "/html/body/app-root/div/app-applicant-details/div/div/div/app-background-check/form/div/div[2]/div[1]/div/div/div/div/span/div")
+        @FindBy(how = How.XPATH, using = "/html/body/app-root/div/app-applicant-details/div/div/div/app-background-check/form/div/div[2]/div[1]/div/div/div/div/span/div")
 	WebElement CalenderICon;
 	@FindBy(how = How.XPATH, using = "//*[@placeholder='mm/dd/yyyy']")
 	WebElement EnterDate;
@@ -63,6 +63,8 @@ public class BackgroundPage {
 
 	@FindBy(how = How.XPATH, using = "//*[contains(@class,'btnDefault')]")
 	WebElement SecondNextButton;
+	@FindBy(how = How.XPATH, using ="//*[@class='boldClassMobile']")
+	WebElement Scrollitem;
 
 	@FindBy(how = How.XPATH, using = "//*[contains(@style,'touch')]")
 	WebElement SignatureBox;
@@ -164,7 +166,10 @@ public class BackgroundPage {
 
 	public void clickSecondNextButton() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].scrollIntoView();", SecondNextButton);
+		js.executeScript("arguments[0].scrollIntoView();", Scrollitem);
+		Actions action = new Actions(driver);
+		action.click(SecondNextButton);
+		action.perform();
 		SecondNextButton.click();
 	}
 
