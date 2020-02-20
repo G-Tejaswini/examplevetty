@@ -11,6 +11,8 @@ import org.openqa.selenium.support.ui.Select;
 public class BackgroundPage {
 
 	WebDriver driver;
+	public Actions action;
+
 
 	public BackgroundPage(WebDriver driver) {
 		this.driver = driver;
