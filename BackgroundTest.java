@@ -21,7 +21,6 @@ public class BackgroundTest extends ObjectPages {
 		backgroundpage.clickYearButton();
 		backgroundpage.clickMonth();
 		backgroundpage.clickDate();
-		sleep();
 		backgroundpage.setSocialSecurityNumber("234-55-6778");
 		backgroundpage.setAdress("Andhra");
 		backgroundpage.setZip("12345");
